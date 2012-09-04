@@ -1,2 +1,23 @@
 my rails settings
+1 Testing enviroment
+  rspec
+  cucumber
+  spork
+  guard
+  etc.
 
+2 Twitter Bootstrap ready
+  twitter-bootstrap-rails
+  simple_form
+
+3 Japanese locale
+  timezone
+  ja.yml
+
+4 preparing git
+  git init ~ first commit
+
+
+  todo 
+    change around sed... use regexp
+    
