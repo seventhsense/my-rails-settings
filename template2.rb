@@ -27,6 +27,7 @@ generate "simple_form:install --bootstrap"
 
 generate "rspec:install"
 generate "cucumber:install --spork"
+run 'cp ~/my_rails_settings/application_steps.rb features/step_definitions/'
 
 sed = <<EOS
 sed -ie "6a\ require 'capybara/rspec';
@@ -78,10 +79,12 @@ message = <<EOS
 Now All ready
 
 Todo next
-1 cd Apprication root
-2 bundle exec spork
-3 rails g bootstrap:layout application fixed
-4 rails g bootstrap:themed [Resource_name]
+1 cd Rails Apprication root
+2 bundle exec guard
+3 to generate layout/application.html.erb
+  rails g bootstrap:layout application fixed
+4 to generate view files
+  rails g bootstrap:themed [Resource_name]
 5 rails g factory_girl:model Model scheme --dir=spec/factories
 
 
